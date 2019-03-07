@@ -1,0 +1,18 @@
+// please use gradle 4.10.3
+plugins {
+    id 'java'
+    id 'application' // (optional) allows execution of main class directly from gradle
+}
+
+mainClassName = "com.topera.dagger.Main" // (optional) allows execution of main class directly from gradle
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.dagger:dagger:2.21'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.21'
+}
+
+defaultTasks 'clean','build','run'
