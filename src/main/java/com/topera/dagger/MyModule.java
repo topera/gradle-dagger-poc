@@ -1,11 +1,12 @@
 package com.topera.dagger;
 
 import dagger.Module;
-import dagger.Provides;
 
 @Module
-public class MyModule {
+class MyModule {
 
+    // uncomment to customize injections!
+    /*
     @Provides
     public MyController providesMyController(MyService myService) {
         return new MyController(myService);
@@ -15,5 +16,6 @@ public class MyModule {
     public MyService providesMyService() {
         return new MyService();
     }
+    */
 
 }
